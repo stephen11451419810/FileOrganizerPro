@@ -1,4 +1,4 @@
-# 📁 File Organizer Pro - 智能文件整理工具
+<img width="1704" height="1368" alt="image" src="https://github.com/user-attachments/assets/01170cd0-e80f-4734-b1fa-2bbc82238a42" /># 📁 File Organizer Pro - 智能文件整理工具
 
 > 一款功能强大的Windows文件整理工具，支持发票专项整理、AI智能识别、多策略分类
 
@@ -26,3 +26,18 @@ pip install -r requirements.txt
 # 图形界面模式（推荐）
 cd /d '安装路径根文件夹'
 FileOrganizerPro.exe --gui
+
+更新：
+新支持了ai分类 配置文件在config/default_rules.json 如果需要的话请修改后编译
+在60-80行会发现
+{
+  "ai_settings": {
+    "enabled": true,
+    "api_key": "sk-你的OpenAI_API_Key", (修改为你的openai的apikey)
+    "model": "gpt-3.5-turbo", (修改为你想使用的openai模型)
+    "max_tokens": 50,
+    "temperature": 0.3
+  }
+}
+↑这些代码 目前仅适配openai
+
