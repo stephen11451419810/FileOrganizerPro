@@ -1,0 +1,40 @@
+{
+  "categories": {
+    "发票": [".pdf", ".jpg", ".jpeg", ".png", ".ofd"],
+    "文档": [".txt", ".doc", ".docx", ".pdf", ".md", ".rtf", ".wps"],
+    "表格": [".xls", ".xlsx", ".csv", ".numbers", ".et"],
+    "演示文稿": [".ppt", ".pptx", ".key", ".dps"],
+    "图片": [".jpg", ".jpeg", ".png", ".gif", ".bmp", ".svg", ".webp", ".ico"],
+    "视频": [".mp4", ".avi", ".mov", ".wmv", ".flv", ".mkv", ".webm", ".m4v"],
+    "音频": [".mp3", ".wav", ".flac", ".aac", ".m4a", ".ogg", ".wma"],
+    "代码": [".py", ".js", ".html", ".css", ".java", ".cpp", ".c", ".go", ".rs", ".php", ".rb", ".ts"],
+    "压缩包": [".zip", ".rar", ".7z", ".tar", ".gz", ".bz2", ".xz"],
+    "设计": [".psd", ".ai", ".cdr", ".sketch", ".fig", ".xd"],
+    "数据": [".json", ".xml", ".yaml", ".yml", ".sql", ".db", ".sqlite"],
+    "可执行": [".exe", ".msi", ".app", ".deb", ".rpm", ".sh", ".bat"],
+    "临时文件": [".tmp", ".temp", ".cache", ".log", ".bak", ".old", ".swp"]
+  },
+  "invoice_keywords": [
+    "发票", "invoice", "fapiao", "账单", "bill", "收款", "付款", "报销",
+    "电子发票", "增值税", "普通发票", "专用发票"
+  ],
+  "invoice_date_patterns": [
+    "(\\d{4})[-/年](\\d{1,2})[-/月](\\d{1,2})",
+    "(\\d{8})"
+  ],
+  "ai_settings": {
+    "enabled": false,
+    "model": "gpt-3.5-turbo",
+    "api_key": "",
+    "max_tokens": 50,
+    "temperature": 0.3
+  },
+  "special_rules": {
+    "create_date_folder": false,
+    "keep_original_structure": false,
+    "generate_report": true,
+    "handle_duplicate": "rename"
+  },
+  "ignore_extensions": [".lnk", ".ini", ".cfg"],
+  "ignore_folders": ["__pycache__", ".git", "venv", "env", "node_modules"]
+}
