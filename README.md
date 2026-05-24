@@ -22,3 +22,8 @@
 ### 1. 安装依赖
 ```bash
 pip install -r requirements.txt
+###2.运行程序
+# 图形界面模式（推荐）
+python src/main.py --gui
+
+# 或直接双击 run.bat
